@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title>zebra-striped</title>
-<style>
-     table, th, td
+<title>zebra-striped</title>
+  
+ <style> 
+  table, th, td
    {
   border: 1px solid black;
   border-collapse: collapse;
-    }
-<style/>
-<script> 
-     function(){ 
-          var rows = document.getElementsByTagName("tr");   
+   
+   }
+
+  .odd{background-color: black;} 
+
+  .even{background-color: white;} 
+
+</style>
+<script>
+    function(){ 
+
+    var rows = document.getElementsByTagName("tr");   
+
     for(i = 0; i < rows.length; i++){           
-         if(i % 2 == 0){ 
-         }else{ 
-              rows[i].style.background= "black";
-        rows[i].className = "white";
-        }       
-     } 
- } 
-<script/>
+
+  
+
+      if(i % 2 == 0){ 
+
+        rows[i].className = "even"; 
+
+      }else{ 
+
+        rows[i].className = "odd"; 
+
+      }       
+
+    } 
+
+  } 
+</script>
 </head>
 <body>
-<table id="table">
+<table id="striped">
 <tr>
   <th>Name</th>
   <th>Bounces</th>
@@ -46,7 +64,7 @@
 </tr>
 </table>
 
-<table id="table">
+<table id="thetable">
 <tr>
   <th>Name</th>
   <th>Favourite Dish</th>
