@@ -2,10 +2,25 @@
 <html>
 <head>
      <title>zebra-striped</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-     <link rel="stylesheet" href="css/CSS.css"/>
-     <script src="js/jsscript.js></script>
-                  </head>
+<style>
+     table, th, td
+   {
+  border: 1px solid black;
+  border-collapse: collapse;
+    }
+<style>
+     function(){ 
+          var rows = document.getElementsByTagName("tr");   
+    for(i = 0; i < rows.length; i++){           
+         if(i % 2 == 0){ 
+         }else{ 
+              rows[i].style.background= "black";
+        rows[i].className = "white";
+        }       
+     } 
+ } 
+<script/>
+</head>
 <body>
 <table>
 <tr>
