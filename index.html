@@ -4,6 +4,7 @@
 <title>zebra-striped</title>
   
  <style> 
+   table {border-collapse: collapse;}
 
   .odd{background-color: black;} 
 
@@ -15,13 +16,13 @@
 
   if(document.getElementsByTagName){  
 
-    var table = document.getElementById(id);   
+    var table = document.getElementById("thetable");   
 
     var rows = table.getElementsByTagName("tr");   
 
     for(i = 0; i < rows.length; i++){           
 
-  //manipulate rows 
+  
 
       if(i % 2 == 0){ 
 
@@ -82,7 +83,7 @@
   <td>Gango</td>
 </tr>       
 </table>
-<input type="button" value="zebra striped" onClick=" function alternate(id);">
+<input type="button" value="Zebra Striped" onClick=" function alternate(id);">
 
 </body>
 </html>
