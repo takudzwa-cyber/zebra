@@ -8,7 +8,7 @@
    {
   border: 1px solid black;
   border-collapse: collapse;
-   width: 25%;
+   
    }
 
   .odd{background-color: black;} 
@@ -17,13 +17,9 @@
 
 </style>
 <script>
-    function alternate(id){ 
+    function(){ 
 
-  if(document.getElementsByTagName){  
-
-    var table = document.getElementById("thetable");   
-
-    var rows = table.getElementsByTagName("tr");   
+    var rows = document.getElementsByTagName("tr");   
 
     for(i = 0; i < rows.length; i++){           
 
@@ -42,8 +38,6 @@
     } 
 
   } 
-
-}
 </script>
 </head>
 <body>
@@ -88,7 +82,7 @@
   <td>Gango</td>
 </tr>       
 </table>
-<input type="button" value="Zebra Striped" onClick=" function alternate(id)">
+<input type="button" value="Zebra Striped" onClick="function()">
 
 </body>
 </html>
