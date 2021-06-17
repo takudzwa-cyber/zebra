@@ -10,34 +10,17 @@
   border-collapse: collapse;
    
    }
-
-  .odd{background-color: black;} 
-
-  .even{background-color: white;} 
-
 </style>
 <script>
     function(){ 
-
-    var rows = document.getElementsByTagName("tr");   
-
+          var rows = document.getElementsByTagName("tr");   
     for(i = 0; i < rows.length; i++){           
-
-  
-
-      if(i % 2 == 0){ 
-
-        rows[i].className = "even"; 
-
-      }else{ 
-
-        rows[i].className = "odd"; 
-
-      }       
-
-    } 
-
-  } 
+         if(i % 2 == 0){ 
+         }else{ 
+        rows[i].style.background= "black";
+        rows[i].className = "white";
+        }       
+     } 
 </script>
 </head>
 <body>
