@@ -11,9 +11,7 @@
    
    }
 
-  .odd{background-color: black;} 
-
-  .even{background-color: white;} 
+   
 
 </style>
 <script>
@@ -27,11 +25,13 @@
 
       if(i % 2 == 0){ 
 
-        rows[i].className = "even"; 
+        
 
       }else{ 
 
-        rows[i].className = "odd"; 
+        rows[i].style.background= "black";
+        rows[i].className = "white";
+        
 
       }       
 
