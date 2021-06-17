@@ -2,9 +2,46 @@
 <html>
 <head>
 <title>zebra-striped</title>
+  
+ <style> 
+
+  .odd{background-color: black;} 
+
+  .even{background-color: white;} 
+
+</style>
+<script>
+    function alternate(id){ 
+
+  if(document.getElementsByTagName){  
+
+    var table = document.getElementById(id);   
+
+    var rows = table.getElementsByTagName("tr");   
+
+    for(i = 0; i < rows.length; i++){           
+
+  //manipulate rows 
+
+      if(i % 2 == 0){ 
+
+        rows[i].className = "even"; 
+
+      }else{ 
+
+        rows[i].className = "odd"; 
+
+      }       
+
+    } 
+
+  } 
+
+}
+</script>
 </head>
 <body>
-<table class="zebra-table">
+<table id="thetable">
 <tr>
   <th>Name</th>
   <th>Bounces</th>
@@ -27,7 +64,7 @@
 </tr>
 </table>
 
-<table class="dish-table">
+<table id="thetable">
 <tr>
   <th>Name</th>
   <th>Favourite Dish</th>
@@ -45,7 +82,7 @@
   <td>Gango</td>
 </tr>       
 </table>
-
+<input type="button" value="zebra striped" onClick=" function alternate(id);">
 
 </body>
 </html>
