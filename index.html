@@ -15,7 +15,7 @@
     function myfunction(){ 
           var rows = document.getElementsByTagName("tr");   
     for(i = 0; i < rows.length; i++){           
-         if(i % 2 === 0){ 
+         if(i % 2 == 0){ 
          }else{ 
         rows[i].style.background= "black";
         rows[i].className = "white";
@@ -46,7 +46,6 @@
   <td>1000</td>
 </tr>
 </table>
-
 <table id="thetable">
 <tr>
   <th>Name</th>
@@ -65,7 +64,6 @@
   <td>Gango</td>
 </tr>       
 </table>
-<button class="button" onclick= "myfunction()">zebra</button>
-
+<button class="button" onclick= "myfunction()">Stripped</button>
 </body>
 </html>
