@@ -1,4 +1,4 @@
-function myFunction()
+function zebra()
  {
 	var trElements = document.getElementsByTagName("tr");
 	for (var i = 0; i < trElements.length; i++) {
